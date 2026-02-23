@@ -1,4 +1,4 @@
-b/* Reset */
+/* Reset */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -328,4 +328,46 @@ html {
 .about-card:hover {
     transform: translateY(-8px);
     background: #374151;
+}
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar nav {
+        margin-top: 10px;
+    }
+
+    .navbar nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .hero {
+        height: 350px;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .about-section,
+    .contact-section {
+        padding: 40px 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .card {
+        width: 200px;
+    }
 }
